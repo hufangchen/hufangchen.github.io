@@ -229,7 +229,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hufangchen.github.io/myBolg/2018/09/04/hello/">
+    <link itemprop="mainEntityOfPage" href="https://hufangchen.github.io/myBolg/2018/09/04/ES6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="胡方琛">
@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/myBolg/2018/09/04/hello/" itemprop="url">hello</a></h1>
+                <a class="post-title-link" href="/myBolg/2018/09/04/ES6/" itemprop="url">ES6转码成ES5</a></h1>
         
 
         <div class="post-meta">
@@ -260,7 +260,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-04T13:17:31+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-04T16:21:13+08:00">
                 2018-09-04
               </time>
             
@@ -300,127 +300,17 @@
       
         
           
-            <p>#myBolg</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hufangchen.github.io/myBolg/2018/09/04/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="胡方琛">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/myBolg/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="时光荏苒">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/myBolg/2018/09/04/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-04T01:26:19+08:00">
-                2018-09-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这是我作为test的第一篇文章</p>
+            <p>开始学习es6，但是对于大多数浏览器来说并不是完全支持es6的语法规则，所以我们要es6转化为es5语法，那么我们用到的工具就是babel<br>1.检查基本环境的配置，node，npm</p>
+<p>2.npm init 创建package.json文件，配置相应信息</p>
+<p>3.创建.babelrc文件<br>“presets”: [], //设置转码规则<br>“plugins”: []  //设置插件</p>
+<p>4.安装命令行转码 babel-cli<br>npm install –save-dev babel-cli 建议本地安装</p>
+<p>5.转码规则</p>
+<ul>
+<li>转码结果输出到标准输出<br>babel example.js</li>
+<li>转码结果写入一个文–out-file 或 -o 参数指定输出文件<br>babel example.js –out-file compiled.js<br>或者<br>babel example.js -o compiled.js</li>
+<li>整个目录转码–out-dir 或 -d 参数指定输出目录<br>babel src –out-dir lib<br>或者<br>babel src -d lib</li>
+<li>-s 参数生成source map文件<br>babel src -d lib -s</li>
+</ul>
 
           
         
@@ -502,7 +392,7 @@
               
                 <a href="/myBolg/about/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
